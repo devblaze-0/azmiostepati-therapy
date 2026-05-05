@@ -1,0 +1,31 @@
+.footer {
+  display: grid;
+  gap: 1.5rem;
+  inline-size: min(100%, var(--container-inline-size));
+  margin-inline: auto;
+  padding-block: 2.5rem;
+  padding-inline: var(--page-gutter);
+  border-block-start: 1px solid var(--color-line);
+
+  & h2 {
+    font-size: 1.5rem;
+  }
+
+  & address {
+    display: grid;
+    gap: 0.35rem;
+    font-style: normal;
+  }
+
+  & a {
+    color: var(--color-primary);
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 760px) {
+  .footer {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.65fr);
+    align-items: start;
+  }
+}

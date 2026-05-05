@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.details {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  padding: 1.25rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-small);
+  background: var(--color-soft);
+
+  & address {
+    display: grid;
+    gap: 0.35rem;
+    font-style: normal;
+  }
+
+  & a {
+    color: var(--color-primary);
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 760px) {
+  .grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+}

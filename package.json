@@ -1,0 +1,29 @@
+{
+  "name": "azmiostepati-therapy-landing",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "mkdir -p .next/standalone/.next && cp -R public .next/standalone/public && cp -R .next/static .next/standalone/.next/static",
+    "start": "node .next/standalone/server.js",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "eslint": "9.39.1",
+    "eslint-config-next": "latest",
+    "prettier": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

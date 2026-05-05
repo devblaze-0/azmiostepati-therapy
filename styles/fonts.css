@@ -1,0 +1,6 @@
+@layer base {
+  :root {
+    --font-primary: system-ui, sans-serif;
+    --font-secondary: Georgia, serif;
+  }
+}
