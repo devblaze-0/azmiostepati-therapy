@@ -2,7 +2,7 @@ export const SUPPORTED_LOCALES = ["id", "en"] as const;
 export type Locale = (typeof SUPPORTED_LOCALES)[number];
 
 export const DEFAULT_LOCALE: Locale = "id";
-const rawBusinessPhone = process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? "0821-7679-6694";
+const rawBusinessPhone = process.env.NEXT_PUBLIC_BUSINESS_PHONE ?? "0851-6180-5951";
 
 export const business = {
   name: "AzmiOstepati Therapy dan Training Center",
@@ -194,7 +194,7 @@ export const dictionaries = {
         "This content architecture is prepared for patients, families, and referral partners such as doctors, clinics, fitness professionals, and physical-selection institutions."
     },
     servicesPage: {
-      title: "Therapy Services",
+      title: "Azmiostepati Therapy",
       lead: "The service structure is modular so it can grow into detailed pages for every program."
     },
     contact: {
