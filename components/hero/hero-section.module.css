@@ -6,7 +6,7 @@
   padding-inline: var(--page-gutter);
   background:
     linear-gradient(90deg, rgb(20 61 85 / 88%), rgb(20 61 85 / 58%)),
-    url("/cases/pdf-page-10-01-web.jpg") center / cover;
+    url("/cases/pdf-page-02-02-web.jpg") center / cover;
 }
 
 .copy {
