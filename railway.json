@@ -5,7 +5,7 @@
     "buildCommand": "yarn build"
   },
   "deploy": {
-    "startCommand": "yarn start",
+    "startCommand": "HOSTNAME=0.0.0.0 node .next/standalone/server.js",
     "healthcheckPath": "/id",
     "healthcheckTimeout": 120,
     "restartPolicyType": "ON_FAILURE",
